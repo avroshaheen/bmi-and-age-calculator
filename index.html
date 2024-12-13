@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spicy Web</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+  <header>
+    <span>⚖️</span>
+    <h1>⚖️ BMI & Age Calculator</h1>
+  </header>
+  <main class="form">
+    <h6>
+      Hello <input type="text" name="name" id="name" placeholder="Name">
+      
+        Select
+        <select name="tools" id="tools">
+          <option value="">Tools</option>
+
+          <option value="Age Calculator">Age Calculator</option>
+          <option value="BMI">Body Mass Index(BMI)</option>
+        </select>
+        <hr>
+
+    </h6>
+    <div id="bmi-content">
+      <div class="wrapper">
+        <div>
+          <input type="number" id="height" placeholder="Height (feet)">
+        </div>
+        <div>
+          <input type="number" id="weight" placeholder="Weight (kg)">
+        </div>
+      </div>
+      <sub>ℹ️ Input valid data to avoid buggy output</sub>
+      <br>
+      <button class="display" id="calc-bmi-button">Calculate BMI</button>
+      <br><br>
+      <span id="bmi"></span>
+    </div>
+    <div id="age-content">
+      <div class="wrapper">
+        <div>
+          <label for="birth-date">Birthday</label>
+
+          <input type="date" id="birth-date">
+        </div>
+        <div>
+          <label for="current-date">Current Date</label>
+
+          <input type="date" id="current-date">
+        </div>
+      </div>
+      <br> <sub>ℹ️ Input valid data to avoid buggy output</sub>
+      <br>
+      <button class="display" id="calc-age-button">Calculate Age</button>
+      <br>
+      <br> <span id="age"></span>
+
+    </div>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
